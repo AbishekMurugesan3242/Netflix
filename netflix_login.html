@@ -1,0 +1,118 @@
+<!doctype html>
+<head>
+    <title>html&css</title>
+    <style>
+        body{
+            background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(netflex_bg.jpg);
+            padding: 20px;
+        }
+        img{
+            cursor: pointer;
+            width: 155px;
+            height: 6vh;
+        }
+        BUTTON{
+            font-family: sans-serif;
+            font-weight: 500;
+            font-size: 20px;
+            color: white;
+            margin: 0px 15px;
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .button{
+            border-radius: 40px;
+            background: red;
+            border: none;
+            width: 100px;
+            height: 5vh;
+            transition: transform 0.1s;
+        }
+        .button:hover{
+            transform: translateY(-2px);
+        }
+        .login{
+            width: 350px;
+            height: 400px;
+            color: white;
+            border-radius: 30px;
+            background: red;
+            border: 2px solid;
+            background: none;
+            margin: 80px 300px;
+            align-items: center;
+            backdrop-filter: blur(2px);
+        }
+        .loginapp{
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            font-size: 30px;
+        }
+        input{
+            color: white;
+        }
+        .form{
+            margin-top: 40px;
+            margin-left: 65px;
+            display: inline-block;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 0px;
+        }
+        .form input{
+            margin-bottom: 20px;
+            border-radius: 30px;
+            background: none;
+            text-align: center;
+            border-color: white;
+            padding: 10px 25px;
+        } 
+        .loginbutton{
+            border-radius: 40px;
+            background: red;
+            color: white;
+            margin-left: 35px;
+            margin-top: 25px;
+            cursor: pointer;
+            border: none;
+            width: 150px;
+            height: 7vh;
+            transition: transform 0.1s;
+        }
+        .loginbutton:hover{
+            transform: translateY(-2px);
+        }
+        #forgetpassword{
+            font-size: 14px;
+            color: white;
+            margin-left: 120px;
+            margin-bottom: 30px;
+        }
+        .checkbox{
+            margin-left: auto;
+        }
+        
+    </style>
+</head>
+<body>
+     <div class="navbar">
+        <img src="netflix_logo.png">
+
+        <button class="button">Help</button>
+     </div>
+     <div class="login">
+        <div class="loginapp">Login</div>
+        <form class="form">
+            <input ID="form" type="text" placeholder="Name Or mail" required>
+            <input type="password" placeholder="Password"  required>
+            <a id="forgetpassword" href="#">Forget password</a><br>
+            <input type="checkbox" class="checkbox" required><span> i agree to the condiction</span><br>
+            <button class="loginbutton">submit</button>
+        </form>
+        
+     </div>
+</body>
